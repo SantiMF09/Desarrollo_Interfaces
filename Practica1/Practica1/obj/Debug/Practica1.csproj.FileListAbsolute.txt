@@ -1,0 +1,15 @@
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.csprojAssemblyReference.cache
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.AgregarPersona.resources
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.DNI.resources
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.Incompletos.resources
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.Inicio.resources
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.Mostrar.resources
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.NombreLargo.resources
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.Properties.Resources.resources
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.csproj.GenerateResource.cache
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.csproj.CoreCompileInputs.cache
+C:\Users\Santiago\source\repos\Practica1\Practica1\bin\Debug\Practica1.exe.config
+C:\Users\Santiago\source\repos\Practica1\Practica1\bin\Debug\Practica1.exe
+C:\Users\Santiago\source\repos\Practica1\Practica1\bin\Debug\Practica1.pdb
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.exe
+C:\Users\Santiago\source\repos\Practica1\Practica1\obj\Debug\Practica1.pdb
