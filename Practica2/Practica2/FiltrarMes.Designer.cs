@@ -35,11 +35,13 @@
             this.textDia = new System.Windows.Forms.TextBox();
             this.buttonSend = new System.Windows.Forms.Button();
             this.tareaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.tareaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.miagendaDataSet1 = new Practica2.miagendaDataSet1();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
@@ -51,15 +53,15 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tareaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.miagendaDataSet1 = new Practica2.miagendaDataSet1();
             this.tareaTableAdapter = new Practica2.miagendaDataSet1TableAdapters.tareaTableAdapter();
             this.tableAdapterManager = new Practica2.miagendaDataSet1TableAdapters.TableAdapterManager();
+            this.textAnnio = new System.Windows.Forms.TextBox();
+            this.labelAnnio = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingNavigator)).BeginInit();
             this.tareaBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tareaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tareaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -90,7 +92,7 @@
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(184, 78);
+            this.buttonSend.Location = new System.Drawing.Point(291, 74);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(75, 23);
             this.buttonSend.TabIndex = 9;
@@ -125,6 +127,23 @@
             this.tareaBindingNavigator.TabIndex = 15;
             this.tareaBindingNavigator.Text = "bindingNavigator1";
             // 
+            // tareaBindingSource
+            // 
+            this.tareaBindingSource.DataMember = "tarea";
+            this.tareaBindingSource.DataSource = this.miagendaDataSet1;
+            // 
+            // miagendaDataSet1
+            // 
+            this.miagendaDataSet1.DataSetName = "miagendaDataSet1";
+            this.miagendaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -158,16 +177,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -190,7 +202,7 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // tareaDataGridView
@@ -246,16 +258,6 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "lugar";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // tareaBindingSource
-            // 
-            this.tareaBindingSource.DataMember = "tarea";
-            this.tareaBindingSource.DataSource = this.miagendaDataSet1;
-            // 
-            // miagendaDataSet1
-            // 
-            this.miagendaDataSet1.DataSetName = "miagendaDataSet1";
-            this.miagendaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tareaTableAdapter
             // 
             this.tareaTableAdapter.ClearBeforeFill = true;
@@ -267,11 +269,29 @@
             this.tableAdapterManager.tareaTableAdapter = this.tareaTableAdapter;
             this.tableAdapterManager.UpdateOrder = Practica2.miagendaDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // textAnnio
+            // 
+            this.textAnnio.Location = new System.Drawing.Point(185, 77);
+            this.textAnnio.Name = "textAnnio";
+            this.textAnnio.Size = new System.Drawing.Size(100, 20);
+            this.textAnnio.TabIndex = 16;
+            // 
+            // labelAnnio
+            // 
+            this.labelAnnio.AutoSize = true;
+            this.labelAnnio.Location = new System.Drawing.Point(185, 62);
+            this.labelAnnio.Name = "labelAnnio";
+            this.labelAnnio.Size = new System.Drawing.Size(18, 13);
+            this.labelAnnio.TabIndex = 17;
+            this.labelAnnio.Text = "ID";
+            // 
             // FiltrarMes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelAnnio);
+            this.Controls.Add(this.textAnnio);
             this.Controls.Add(this.tareaDataGridView);
             this.Controls.Add(this.tareaBindingNavigator);
             this.Controls.Add(this.buttonExit);
@@ -284,9 +304,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingNavigator)).EndInit();
             this.tareaBindingNavigator.ResumeLayout(false);
             this.tareaBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tareaDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tareaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,5 +339,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.TextBox textAnnio;
+        private System.Windows.Forms.Label labelAnnio;
     }
 }

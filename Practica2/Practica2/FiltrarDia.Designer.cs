@@ -35,10 +35,11 @@
             this.tareaTableAdapter = new Practica2.miagendaDataSet1TableAdapters.tareaTableAdapter();
             this.tableAdapterManager = new Practica2.miagendaDataSet1TableAdapters.TableAdapterManager();
             this.tareaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
@@ -55,8 +56,9 @@
             this.textDia = new System.Windows.Forms.TextBox();
             this.textMes = new System.Windows.Forms.TextBox();
             this.labelMes = new System.Windows.Forms.Label();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.textAnnio = new System.Windows.Forms.TextBox();
+            this.labelAnnio = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingNavigator)).BeginInit();
@@ -112,6 +114,22 @@
             this.tareaBindingNavigator.TabIndex = 0;
             this.tareaBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
+            // 
             // bindingNavigatorMovePreviousItem
             // 
             this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -130,22 +148,14 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -168,7 +178,7 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // tareaDataGridView
@@ -235,7 +245,7 @@
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(309, 83);
+            this.buttonSend.Location = new System.Drawing.Point(434, 80);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(75, 23);
             this.buttonSend.TabIndex = 2;
@@ -275,15 +285,6 @@
             this.labelMes.TabIndex = 5;
             this.labelMes.Text = "Mes";
             // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
-            // 
             // buttonExit
             // 
             this.buttonExit.Location = new System.Drawing.Point(352, 415);
@@ -294,11 +295,29 @@
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
+            // textAnnio
+            // 
+            this.textAnnio.Location = new System.Drawing.Point(309, 83);
+            this.textAnnio.Name = "textAnnio";
+            this.textAnnio.Size = new System.Drawing.Size(100, 20);
+            this.textAnnio.TabIndex = 8;
+            // 
+            // labelAnnio
+            // 
+            this.labelAnnio.AutoSize = true;
+            this.labelAnnio.Location = new System.Drawing.Point(309, 67);
+            this.labelAnnio.Name = "labelAnnio";
+            this.labelAnnio.Size = new System.Drawing.Size(18, 13);
+            this.labelAnnio.TabIndex = 9;
+            this.labelAnnio.Text = "ID";
+            // 
             // FiltrarDia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelAnnio);
+            this.Controls.Add(this.textAnnio);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.textMes);
             this.Controls.Add(this.labelMes);
@@ -350,5 +369,7 @@
         private System.Windows.Forms.TextBox textMes;
         private System.Windows.Forms.Label labelMes;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.TextBox textAnnio;
+        private System.Windows.Forms.Label labelAnnio;
     }
 }

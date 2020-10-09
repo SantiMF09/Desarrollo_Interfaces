@@ -34,7 +34,7 @@ namespace Practica2
 
         private void buttonSend_Click(object sender, EventArgs e)
         {
-            this.tareaTableAdapter.FDia(this.miagendaDataSet1.tarea, Convert.ToInt32(textMes.Text), Convert.ToInt32(textDia.Text));
+            this.tareaTableAdapter.FDia(this.miagendaDataSet1.tarea, Convert.ToInt32(textMes.Text), Convert.ToInt32(textDia.Text), Convert.ToInt32(textAnnio.Text));
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
