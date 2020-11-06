@@ -202,7 +202,7 @@
             this.tareaDataGridView.DataSource = this.tareaBindingSource;
             this.tareaDataGridView.Location = new System.Drawing.Point(79, 72);
             this.tareaDataGridView.Name = "tareaDataGridView";
-            this.tareaDataGridView.Size = new System.Drawing.Size(639, 220);
+            this.tareaDataGridView.Size = new System.Drawing.Size(645, 220);
             this.tareaDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -260,7 +260,7 @@
             this.Controls.Add(this.tareaDataGridView);
             this.Controls.Add(this.tareaBindingNavigator);
             this.Name = "ModificarTarea";
-            this.Text = "ModificarTarea";
+            this.Text = "Modificar tareas";
             this.Load += new System.EventHandler(this.ModificarTarea_Load);
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).EndInit();

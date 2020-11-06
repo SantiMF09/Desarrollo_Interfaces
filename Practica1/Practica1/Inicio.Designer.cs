@@ -68,7 +68,7 @@
             // 
             // NombreLargo
             // 
-            this.NombreLargo.Location = new System.Drawing.Point(522, 104);
+            this.NombreLargo.Location = new System.Drawing.Point(524, 104);
             this.NombreLargo.Name = "NombreLargo";
             this.NombreLargo.Size = new System.Drawing.Size(249, 60);
             this.NombreLargo.TabIndex = 3;
@@ -88,9 +88,9 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(267, 346);
+            this.Exit.Location = new System.Drawing.Point(295, 340);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(249, 60);
+            this.Exit.Size = new System.Drawing.Size(191, 41);
             this.Exit.TabIndex = 5;
             this.Exit.Text = "SALIR";
             this.Exit.UseVisualStyleBackColor = true;
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 450);
+            this.ClientSize = new System.Drawing.Size(785, 393);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.PersonasIncompletas);
             this.Controls.Add(this.NombreLargo);
@@ -108,7 +108,7 @@
             this.Controls.Add(this.ListadoPersonas);
             this.Controls.Add(this.InsertarPerson);
             this.Name = "Inicio";
-            this.Text = "Form1";
+            this.Text = "Inicio";
             this.ResumeLayout(false);
 
         }

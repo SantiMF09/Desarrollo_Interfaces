@@ -61,5 +61,10 @@ namespace Practica2
             FiltrarMes FM = new FiltrarMes();
             FM.Show();
         }
+
+        private void tareaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

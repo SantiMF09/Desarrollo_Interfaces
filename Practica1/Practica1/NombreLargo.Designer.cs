@@ -37,7 +37,7 @@
             // 
             this.labelTitulo.AutoSize = true;
             this.labelTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitulo.Location = new System.Drawing.Point(238, 42);
+            this.labelTitulo.Location = new System.Drawing.Point(238, 19);
             this.labelTitulo.Name = "labelTitulo";
             this.labelTitulo.Size = new System.Drawing.Size(314, 29);
             this.labelTitulo.TabIndex = 3;
@@ -46,7 +46,7 @@
             // listNLargo
             // 
             this.listNLargo.FormattingEnabled = true;
-            this.listNLargo.Location = new System.Drawing.Point(12, 104);
+            this.listNLargo.Location = new System.Drawing.Point(12, 68);
             this.listNLargo.Name = "listNLargo";
             this.listNLargo.Size = new System.Drawing.Size(776, 303);
             this.listNLargo.TabIndex = 4;
@@ -54,9 +54,9 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(356, 415);
+            this.buttonExit.Location = new System.Drawing.Point(351, 385);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.Size = new System.Drawing.Size(98, 44);
             this.buttonExit.TabIndex = 5;
             this.buttonExit.Text = "Volver";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -66,12 +66,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 441);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.listNLargo);
             this.Controls.Add(this.labelTitulo);
             this.Name = "NombreLargo";
-            this.Text = "NombreLargo";
+            this.Text = "Los tres nombres mas largos";
             this.Load += new System.EventHandler(this.NombreLargo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

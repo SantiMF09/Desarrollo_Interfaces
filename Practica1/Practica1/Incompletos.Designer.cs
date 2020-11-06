@@ -37,7 +37,7 @@
             // 
             this.labelTitulo.AutoSize = true;
             this.labelTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitulo.Location = new System.Drawing.Point(220, 51);
+            this.labelTitulo.Location = new System.Drawing.Point(211, 29);
             this.labelTitulo.Name = "labelTitulo";
             this.labelTitulo.Size = new System.Drawing.Size(360, 29);
             this.labelTitulo.TabIndex = 3;
@@ -46,7 +46,7 @@
             // listIncompletas
             // 
             this.listIncompletas.FormattingEnabled = true;
-            this.listIncompletas.Location = new System.Drawing.Point(12, 102);
+            this.listIncompletas.Location = new System.Drawing.Point(12, 81);
             this.listIncompletas.Name = "listIncompletas";
             this.listIncompletas.Size = new System.Drawing.Size(776, 303);
             this.listIncompletas.TabIndex = 4;
@@ -54,9 +54,9 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(359, 415);
+            this.buttonExit.Location = new System.Drawing.Point(351, 403);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.Size = new System.Drawing.Size(103, 35);
             this.buttonExit.TabIndex = 5;
             this.buttonExit.Text = "Volver";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@
             this.Controls.Add(this.listIncompletas);
             this.Controls.Add(this.labelTitulo);
             this.Name = "Incompletos";
-            this.Text = "Incompletos";
+            this.Text = "Personas con información incompleta";
             this.Load += new System.EventHandler(this.Incompletos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

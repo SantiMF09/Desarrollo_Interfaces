@@ -34,27 +34,27 @@
             this.agendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.agendaTableAdapter = new Practica2.miagendaDataSet1TableAdapters.agendaTableAdapter();
             this.tableAdapterManager = new Practica2.miagendaDataSet1TableAdapters.TableAdapterManager();
+            this.tareaTableAdapter = new Practica2.miagendaDataSet1TableAdapters.tareaTableAdapter();
             this.agendaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.agendaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.agendaDataGridView = new System.Windows.Forms.DataGridView();
-            this.buttonExit = new System.Windows.Forms.Button();
-            this.agendaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.tareaibfk1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tareaTableAdapter = new Practica2.miagendaDataSet1TableAdapters.tareaTableAdapter();
-            this.tareaibfk1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.annioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.agendaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.tareaibfk1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tareaibfk1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agendaBindingNavigator)).BeginInit();
@@ -86,6 +86,10 @@
             this.tableAdapterManager.tareaTableAdapter = this.tareaTableAdapter;
             this.tableAdapterManager.UpdateOrder = Practica2.miagendaDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // tareaTableAdapter
+            // 
+            this.tareaTableAdapter.ClearBeforeFill = true;
+            // 
             // agendaBindingNavigator
             // 
             this.agendaBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -115,6 +119,22 @@
             this.agendaBindingNavigator.TabIndex = 0;
             this.agendaBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -142,21 +162,15 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -179,17 +193,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
             // 
             // agendaBindingNavigatorSaveItem
             // 
@@ -209,39 +214,10 @@
             this.nombreDataGridViewTextBoxColumn,
             this.annioDataGridViewTextBoxColumn});
             this.agendaDataGridView.DataSource = this.agendaBindingSource1;
-            this.agendaDataGridView.Location = new System.Drawing.Point(213, 122);
+            this.agendaDataGridView.Location = new System.Drawing.Point(209, 114);
             this.agendaDataGridView.Name = "agendaDataGridView";
             this.agendaDataGridView.Size = new System.Drawing.Size(344, 220);
             this.agendaDataGridView.TabIndex = 1;
-            // 
-            // buttonExit
-            // 
-            this.buttonExit.Location = new System.Drawing.Point(353, 411);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(75, 23);
-            this.buttonExit.TabIndex = 2;
-            this.buttonExit.Text = "Volver";
-            this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
-            // agendaBindingSource1
-            // 
-            this.agendaBindingSource1.DataMember = "agenda";
-            this.agendaBindingSource1.DataSource = this.miagendaDataSet1;
-            // 
-            // tareaibfk1BindingSource
-            // 
-            this.tareaibfk1BindingSource.DataMember = "tarea_ibfk_1";
-            this.tareaibfk1BindingSource.DataSource = this.agendaBindingSource1;
-            // 
-            // tareaTableAdapter
-            // 
-            this.tareaTableAdapter.ClearBeforeFill = true;
-            // 
-            // tareaibfk1BindingSource1
-            // 
-            this.tareaibfk1BindingSource1.DataMember = "tarea_ibfk_1";
-            this.tareaibfk1BindingSource1.DataSource = this.agendaBindingSource1;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -261,6 +237,31 @@
             this.annioDataGridViewTextBoxColumn.HeaderText = "annio";
             this.annioDataGridViewTextBoxColumn.Name = "annioDataGridViewTextBoxColumn";
             // 
+            // agendaBindingSource1
+            // 
+            this.agendaBindingSource1.DataMember = "agenda";
+            this.agendaBindingSource1.DataSource = this.miagendaDataSet1;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Location = new System.Drawing.Point(353, 411);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.TabIndex = 2;
+            this.buttonExit.Text = "Volver";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // tareaibfk1BindingSource
+            // 
+            this.tareaibfk1BindingSource.DataMember = "tarea_ibfk_1";
+            this.tareaibfk1BindingSource.DataSource = this.agendaBindingSource1;
+            // 
+            // tareaibfk1BindingSource1
+            // 
+            this.tareaibfk1BindingSource1.DataMember = "tarea_ibfk_1";
+            this.tareaibfk1BindingSource1.DataSource = this.agendaBindingSource1;
+            // 
             // AgregarAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,7 +271,7 @@
             this.Controls.Add(this.agendaDataGridView);
             this.Controls.Add(this.agendaBindingNavigator);
             this.Name = "AgregarAgenda";
-            this.Text = "AgregarAgenda";
+            this.Text = "Agregar agendas";
             this.Load += new System.EventHandler(this.AgregarAgenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).EndInit();

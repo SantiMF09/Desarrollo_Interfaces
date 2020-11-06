@@ -85,5 +85,15 @@ namespace Practica1
         {
 
         }
+
+        private void LabelNacimento_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -84,7 +84,7 @@
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonNewAgenda);
             this.Name = "Inicio";
-            this.Text = "Form1";
+            this.Text = "Inicio";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

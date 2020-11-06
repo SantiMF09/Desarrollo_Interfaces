@@ -299,7 +299,7 @@
             this.Controls.Add(this.textDia);
             this.Controls.Add(this.buttonSend);
             this.Name = "FiltrarMes";
-            this.Text = "FiltrarMes";
+            this.Text = "Filtrar por mes";
             this.Load += new System.EventHandler(this.FiltrarMes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingNavigator)).EndInit();
             this.tareaBindingNavigator.ResumeLayout(false);

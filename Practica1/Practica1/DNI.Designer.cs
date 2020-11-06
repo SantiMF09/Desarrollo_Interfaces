@@ -36,17 +36,17 @@
             // 
             // textSearchDNI
             // 
-            this.textSearchDNI.Location = new System.Drawing.Point(168, 165);
+            this.textSearchDNI.Location = new System.Drawing.Point(98, 75);
             this.textSearchDNI.Name = "textSearchDNI";
-            this.textSearchDNI.Size = new System.Drawing.Size(178, 20);
+            this.textSearchDNI.Size = new System.Drawing.Size(209, 20);
             this.textSearchDNI.TabIndex = 1;
             this.textSearchDNI.TextChanged += new System.EventHandler(this.textSearchDNI_TextChanged);
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(271, 224);
+            this.buttonSearch.Location = new System.Drawing.Point(150, 131);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(75, 23);
+            this.buttonSearch.Size = new System.Drawing.Size(106, 50);
             this.buttonSearch.TabIndex = 2;
             this.buttonSearch.Text = "Buscar";
             this.buttonSearch.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@
             // 
             this.labelInfo.AutoSize = true;
             this.labelInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInfo.Location = new System.Drawing.Point(77, 40);
+            this.labelInfo.Location = new System.Drawing.Point(12, 9);
             this.labelInfo.Name = "labelInfo";
             this.labelInfo.Size = new System.Drawing.Size(380, 29);
             this.labelInfo.TabIndex = 3;
@@ -64,7 +64,7 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(168, 224);
+            this.buttonExit.Location = new System.Drawing.Point(317, 253);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(75, 23);
             this.buttonExit.TabIndex = 4;
@@ -76,13 +76,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 317);
+            this.ClientSize = new System.Drawing.Size(402, 286);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.labelInfo);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.textSearchDNI);
             this.Name = "DNI";
-            this.Text = "DNI";
+            this.Text = "Buscar por DNI";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -146,6 +146,7 @@
             this.tareaDataGridView.ReadOnly = true;
             this.tareaDataGridView.Size = new System.Drawing.Size(644, 260);
             this.tareaDataGridView.TabIndex = 2;
+            this.tareaDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tareaDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -260,7 +261,7 @@
             this.Controls.Add(this.tareaDataGridView);
             this.Controls.Add(this.agendaDataGridView);
             this.Name = "VerAgendas";
-            this.Text = "VerAgendas";
+            this.Text = "Cosultar agendas";
             this.Load += new System.EventHandler(this.VerAgendas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).EndInit();

@@ -148,6 +148,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -195,10 +196,10 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.tareaDataGridView.DataSource = this.tareaBindingSource;
-            this.tareaDataGridView.Location = new System.Drawing.Point(57, 149);
+            this.tareaDataGridView.Location = new System.Drawing.Point(57, 140);
             this.tareaDataGridView.Name = "tareaDataGridView";
             this.tareaDataGridView.ReadOnly = true;
-            this.tareaDataGridView.Size = new System.Drawing.Size(644, 220);
+            this.tareaDataGridView.Size = new System.Drawing.Size(644, 229);
             this.tareaDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -327,7 +328,7 @@
             this.Controls.Add(this.tareaDataGridView);
             this.Controls.Add(this.tareaBindingNavigator);
             this.Name = "FiltrarDia";
-            this.Text = "FiltrarDia";
+            this.Text = "Filtrar por dia";
             this.Load += new System.EventHandler(this.FiltrarDia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).EndInit();

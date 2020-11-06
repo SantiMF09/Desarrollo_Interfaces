@@ -28,12 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.listBoxRegistro = new System.Windows.Forms.ListBox();
             this.buttonVolver = new System.Windows.Forms.Button();
-            this.personaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.personaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // labelTitulo
@@ -56,17 +53,13 @@
             // 
             // buttonVolver
             // 
-            this.buttonVolver.Location = new System.Drawing.Point(362, 400);
+            this.buttonVolver.Location = new System.Drawing.Point(340, 393);
             this.buttonVolver.Name = "buttonVolver";
-            this.buttonVolver.Size = new System.Drawing.Size(75, 23);
+            this.buttonVolver.Size = new System.Drawing.Size(118, 45);
             this.buttonVolver.TabIndex = 4;
             this.buttonVolver.Text = "Volver";
             this.buttonVolver.UseVisualStyleBackColor = true;
             this.buttonVolver.Click += new System.EventHandler(this.buttonVolver_Click);
-            // 
-            // personaBindingSource
-            // 
-            this.personaBindingSource.DataSource = typeof(Practica1.Persona);
             // 
             // Mostrar
             // 
@@ -77,9 +70,8 @@
             this.Controls.Add(this.listBoxRegistro);
             this.Controls.Add(this.labelTitulo);
             this.Name = "Mostrar";
-            this.Text = "Mostrar";
+            this.Text = "Mostrar Personas Insertadas";
             this.Load += new System.EventHandler(this.Mostrar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.personaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,6 +82,5 @@
         private System.Windows.Forms.Label labelTitulo;
         private System.Windows.Forms.ListBox listBoxRegistro;
         private System.Windows.Forms.Button buttonVolver;
-        private System.Windows.Forms.BindingSource personaBindingSource;
     }
 }

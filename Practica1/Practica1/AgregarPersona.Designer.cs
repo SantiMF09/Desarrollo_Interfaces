@@ -49,7 +49,7 @@
             // 
             this.LabelNombre.AutoSize = true;
             this.LabelNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelNombre.Location = new System.Drawing.Point(110, 153);
+            this.LabelNombre.Location = new System.Drawing.Point(145, 105);
             this.LabelNombre.Name = "LabelNombre";
             this.LabelNombre.Size = new System.Drawing.Size(65, 20);
             this.LabelNombre.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             this.LabelApellido.AutoSize = true;
             this.LabelApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelApellido.Location = new System.Drawing.Point(110, 185);
+            this.LabelApellido.Location = new System.Drawing.Point(137, 146);
             this.LabelApellido.Name = "LabelApellido";
             this.LabelApellido.Size = new System.Drawing.Size(73, 20);
             this.LabelApellido.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             this.LabelDNI.AutoSize = true;
             this.LabelDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelDNI.Location = new System.Drawing.Point(110, 119);
+            this.LabelDNI.Location = new System.Drawing.Point(173, 66);
             this.LabelDNI.Name = "LabelDNI";
             this.LabelDNI.Size = new System.Drawing.Size(37, 20);
             this.LabelDNI.TabIndex = 2;
@@ -80,17 +80,18 @@
             // 
             this.LabelNacimento.AutoSize = true;
             this.LabelNacimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelNacimento.Location = new System.Drawing.Point(110, 283);
+            this.LabelNacimento.Location = new System.Drawing.Point(122, 265);
             this.LabelNacimento.Name = "LabelNacimento";
-            this.LabelNacimento.Size = new System.Drawing.Size(159, 20);
+            this.LabelNacimento.Size = new System.Drawing.Size(88, 40);
             this.LabelNacimento.TabIndex = 3;
-            this.LabelNacimento.Text = "Fecha de Nacimiento";
+            this.LabelNacimento.Text = "Fecha de \r\nNacimiento";
+            this.LabelNacimento.Click += new System.EventHandler(this.LabelNacimento_Click);
             // 
             // LabelPeso
             // 
             this.LabelPeso.AutoSize = true;
             this.LabelPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPeso.Location = new System.Drawing.Point(110, 248);
+            this.LabelPeso.Location = new System.Drawing.Point(165, 230);
             this.LabelPeso.Name = "LabelPeso";
             this.LabelPeso.Size = new System.Drawing.Size(45, 20);
             this.LabelPeso.TabIndex = 4;
@@ -100,7 +101,7 @@
             // 
             this.LabelAltura.AutoSize = true;
             this.LabelAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelAltura.Location = new System.Drawing.Point(110, 217);
+            this.LabelAltura.Location = new System.Drawing.Point(160, 189);
             this.LabelAltura.Name = "LabelAltura";
             this.LabelAltura.Size = new System.Drawing.Size(51, 20);
             this.LabelAltura.TabIndex = 5;
@@ -108,7 +109,7 @@
             // 
             // textNombre
             // 
-            this.textNombre.Location = new System.Drawing.Point(309, 153);
+            this.textNombre.Location = new System.Drawing.Point(216, 107);
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(100, 20);
             this.textNombre.TabIndex = 6;
@@ -116,7 +117,7 @@
             // 
             // textApellido
             // 
-            this.textApellido.Location = new System.Drawing.Point(309, 187);
+            this.textApellido.Location = new System.Drawing.Point(216, 148);
             this.textApellido.Name = "textApellido";
             this.textApellido.Size = new System.Drawing.Size(100, 20);
             this.textApellido.TabIndex = 7;
@@ -124,7 +125,7 @@
             // 
             // textPeso
             // 
-            this.textPeso.Location = new System.Drawing.Point(309, 248);
+            this.textPeso.Location = new System.Drawing.Point(216, 232);
             this.textPeso.Name = "textPeso";
             this.textPeso.Size = new System.Drawing.Size(100, 20);
             this.textPeso.TabIndex = 8;
@@ -132,7 +133,7 @@
             // 
             // textDNI
             // 
-            this.textDNI.Location = new System.Drawing.Point(309, 119);
+            this.textDNI.Location = new System.Drawing.Point(216, 66);
             this.textDNI.Name = "textDNI";
             this.textDNI.Size = new System.Drawing.Size(100, 20);
             this.textDNI.TabIndex = 9;
@@ -140,7 +141,7 @@
             // 
             // textAlttura
             // 
-            this.textAlttura.Location = new System.Drawing.Point(309, 217);
+            this.textAlttura.Location = new System.Drawing.Point(216, 191);
             this.textAlttura.Name = "textAlttura";
             this.textAlttura.Size = new System.Drawing.Size(100, 20);
             this.textAlttura.TabIndex = 10;
@@ -149,7 +150,7 @@
             // dateNacimento
             // 
             this.dateNacimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNacimento.Location = new System.Drawing.Point(309, 282);
+            this.dateNacimento.Location = new System.Drawing.Point(216, 274);
             this.dateNacimento.Name = "dateNacimento";
             this.dateNacimento.Size = new System.Drawing.Size(100, 20);
             this.dateNacimento.TabIndex = 11;
@@ -159,17 +160,18 @@
             // 
             this.labelTitulo.AutoSize = true;
             this.labelTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitulo.Location = new System.Drawing.Point(116, 36);
+            this.labelTitulo.Location = new System.Drawing.Point(84, 24);
             this.labelTitulo.Name = "labelTitulo";
             this.labelTitulo.Size = new System.Drawing.Size(280, 29);
             this.labelTitulo.TabIndex = 12;
             this.labelTitulo.Text = "DATOS PERSONALES";
+            this.labelTitulo.Click += new System.EventHandler(this.labelTitulo_Click);
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(309, 378);
+            this.buttonSend.Location = new System.Drawing.Point(164, 327);
             this.buttonSend.Name = "buttonSend";
-            this.buttonSend.Size = new System.Drawing.Size(100, 20);
+            this.buttonSend.Size = new System.Drawing.Size(121, 35);
             this.buttonSend.TabIndex = 13;
             this.buttonSend.Text = "Enviar";
             this.buttonSend.UseVisualStyleBackColor = true;
@@ -177,9 +179,9 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(114, 378);
+            this.buttonExit.Location = new System.Drawing.Point(347, 384);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(121, 20);
+            this.buttonExit.Size = new System.Drawing.Size(98, 24);
             this.buttonExit.TabIndex = 14;
             this.buttonExit.Text = "Volver";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -189,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 431);
+            this.ClientSize = new System.Drawing.Size(457, 420);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonSend);
             this.Controls.Add(this.labelTitulo);
@@ -206,7 +208,7 @@
             this.Controls.Add(this.LabelApellido);
             this.Controls.Add(this.LabelNombre);
             this.Name = "AgregarPersona";
-            this.Text = "AgregarPersona";
+            this.Text = "Insertar Personas";
             this.ResumeLayout(false);
             this.PerformLayout();
 

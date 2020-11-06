@@ -213,7 +213,7 @@
             this.tareaDataGridView.Location = new System.Drawing.Point(76, 98);
             this.tareaDataGridView.Name = "tareaDataGridView";
             this.tareaDataGridView.ReadOnly = true;
-            this.tareaDataGridView.Size = new System.Drawing.Size(641, 220);
+            this.tareaDataGridView.Size = new System.Drawing.Size(644, 220);
             this.tareaDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -277,7 +277,7 @@
             this.Controls.Add(this.tareaDataGridView);
             this.Controls.Add(this.tareaBindingNavigator);
             this.Name = "BorrarTarea";
-            this.Text = "BorrarTarea";
+            this.Text = "Borrar tareas";
             this.Load += new System.EventHandler(this.BorrarTarea_Load);
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).EndInit();

@@ -84,7 +84,7 @@
             this.Controls.Add(this.buttonDeleteTarea);
             this.Controls.Add(this.buttonNewTarea);
             this.Name = "MTareas";
-            this.Text = "MTareas";
+            this.Text = "Administrar tareas";
             this.ResumeLayout(false);
 
         }
