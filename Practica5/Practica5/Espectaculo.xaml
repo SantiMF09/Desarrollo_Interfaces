@@ -1,0 +1,40 @@
+﻿<Window x:Class="Practica5.Espectaculo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica5"
+        mc:Ignorable="d"
+        Title="Espectaculo" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="265*"/>
+            <ColumnDefinition Width="36*"/>
+            <ColumnDefinition Width="265*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="239*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Evento: " Grid.Column="1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="40" Width="79" FontSize="20"/>
+        <TextBlock x:Name="NEvento" Grid.Column="1" HorizontalAlignment="Left" Margin="75,0,0,5" TextWrapping="Wrap" Text="El Rey Leon" VerticalAlignment="Bottom" Width="190" Height="30" FontSize="20" FontStyle="Italic"/>
+        <Label Content="DÍA: " Grid.Column="1" HorizontalAlignment="Left" Margin="0,16,0,0" Grid.Row="1" Width="50" FontSize="20"/>
+        <TextBlock x:Name="DiaEvento" Grid.Column="1" HorizontalAlignment="Left" Margin="44,21,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="103" FontSize="20" Text="00/00/0000" FontStyle="Italic"/>
+        <Label Content="HORA: " Grid.Column="1" HorizontalAlignment="Left" Margin="191,16,0,0" Grid.Row="1" VerticalAlignment="Top" Height="33" Width="74" FontSize="20"/>
+        <TextBlock x:Name="HoraEvento" Grid.Column="1" HorizontalAlignment="Left" Margin="259,21,0,0" Grid.Row="1" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Width="59" Height="26" FontSize="20" FontStyle="Italic"/>
+
+        <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="18" Margin="5.45,10,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="18" Fill="Red"/>
+        <Label Content="Ocupado" Grid.Column="3" HorizontalAlignment="Left" Margin="23.45,0,0,0" VerticalAlignment="Top" Height="49" Width="113" FontSize="20" Grid.Row="1"/>
+        <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="18" Margin="186.45,10,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="18" Fill="Orange"/>
+        <Label Content="Reservado" Grid.Column="3" HorizontalAlignment="Left" Margin="204.45,0,0,0" Grid.Row="1" VerticalAlignment="Top" Height="49" Width="124" FontSize="20" Grid.ColumnSpan="2"/>
+        <Label Content="Sala: " Grid.Column="3" HorizontalAlignment="Left" Margin="0.45,10,0,0" VerticalAlignment="Top" Height="40" Width="72" FontSize="20"/>
+        <TextBlock x:Name="NSala" Grid.Column="3" HorizontalAlignment="Left" Margin="50.45,15,0,5" TextWrapping="Wrap" Text="1" Width="189" FontSize="20" FontStyle="Italic" TextDecorations="{x:Null}"/>
+        <Grid x:Name="GridAsientos" Grid.Column="1" HorizontalAlignment="Left" Height="275" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="681" Grid.ColumnSpan="3">
+
+        </Grid>
+    </Grid>
+</Window>
